@@ -1,6 +1,10 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const cors = require("cors");
+
 app.use(express.json()); //fix issues with json data (insomnia)
+app.use(cors());
+
 const db = require('./models');
 
 //Routers using express
