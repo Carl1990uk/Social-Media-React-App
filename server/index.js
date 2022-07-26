@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-//app.use(express.json()); //fix issues with json data (insomnia)
+app.use(express.json()); //fix issues with json data (insomnia)
 const db = require('./models');
 
 //Routers using express
